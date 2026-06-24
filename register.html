@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Account</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="auth-container">
+  <div class="auth-card">
+    <div class="auth-header">
+      <div class="auth-logo">✨</div>
+      <h2>Create Account</h2>
+      <p>Join our community today</p>
+    </div>
+
+    <form id="registerForm" class="auth-form">
+      <div class="form-grid">
+        <div class="form-group full-width">
+          <select id="admin" class="auth-select">
+            <option value="false">👤 User</option>
+            <option value="true">🛡️ Admin</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="nom" placeholder="First Name" class="auth-input">
+          <small id="nomError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="prenom" placeholder="Last Name" class="auth-input">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="age" placeholder="Age" class="auth-input">
+          <small id="ageError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="pseudo" placeholder="Username" class="auth-input">
+          <small id="pseudoError" class="error-text"></small>
+        </div>
+
+        <div class="form-group full-width">
+          <input type="email" id="email" placeholder="Email Address" class="auth-input">
+          <small id="emailError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="MotDePasse" placeholder="Password" class="auth-input">
+          <small id="passError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="password" id="MotDePasseConfirmation" placeholder="Confirm Password" class="auth-input">
+          <small id="confirmPassError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="couleur" placeholder="Color (#HEX)" class="auth-input">
+          <small id="colorError" class="error-text"></small>
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="Devise" placeholder="Currency" class="auth-input">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="Pays" placeholder="Country" class="auth-input">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="avatar" placeholder="Avatar URL" class="auth-input">
+        </div>
+
+        <div class="form-group">
+          <input type="text" id="photo" placeholder="Photo URL" class="auth-input">
+        </div>
+      </div>
+
+      <button type="submit" class="auth-btn">🚀 Create Account</button>
+
+      <p class="auth-footer">
+        Already have an account? <a href="login.html">Sign In</a>
+      </p>
+    </form>
+  </div>
+</div>
+
+<script src="js/register.js"></script>
+</body>
+</html>

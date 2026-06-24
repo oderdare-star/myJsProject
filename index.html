@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Mobile Menu Overlay -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+
+  <header class="dash-header">
+    <div class="dash-header-left">
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <span class="dash-logo">🎯</span>
+      <h1>Dashboard</h1>
+    </div>
+    <div class="dash-header-right">
+      <div id="userInfo" class="dash-user-badge">
+        <img src="https://i.pravatar.cc/150" alt="User" id="userAvatar">
+        <span id="userName">Loading...</span>
+      </div>
+      <button id="logoutBtn" class="dash-logout" aria-label="Logout">
+        <i class="fas fa-sign-out-alt"></i>
+      </button>
+    </div>
+  </header>
+
+  <nav id="navBar" class="dash-nav">
+    <!-- Navigation will be injected here -->
+  </nav>
+
+  <main id="content" class="dash-content">
+    <div class="loading-spinner">
+      <i class="fas fa-spinner fa-spin"></i> Loading...
+    </div>
+  </main>
+
+  <!-- Mobile Bottom Navigation -->
+  <nav class="mobile-bottom-nav" id="mobileBottomNav">
+    <!-- Will be injected by JS -->
+  </nav>
+
+  <footer class="dash-footer">
+    <p>📍 Rabat, Maroc</p>
+    <div class="dash-footer-links">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p style="margin-top:0.5rem;font-size:0.8rem;">&copy; 2024 - Tous droits réservés</p>
+  </footer>
+
+  <script src="js/layout.js"></script>
+</body>
+</html>
